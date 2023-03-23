@@ -6,7 +6,7 @@ def convert_text_to_speech(text_file_path, output_file_path):
         text = text_file.read()
 
     # Use gTTS to generate an MP3 file from the text
-    tts = gTTS(text)
+    tts = gTTS(text, slow=True)
     tts.save(output_file_path)
 
 text_file_path = input('Enter the name of the text file: ')
