@@ -2,7 +2,7 @@ from gtts import gTTS
 
 def convert_text_to_speech(text_file_path, output_file_path):
     # Load text from file
-    with open(text_file_path, 'r') as text_file:
+    with open(text_file_path, 'r', encoding="utf-8") as text_file:
         text = text_file.read()
 
     # Use gTTS to generate an MP3 file from the text
